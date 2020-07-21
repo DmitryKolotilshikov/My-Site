@@ -16,10 +16,12 @@ function setupVideo(video) {
     let id = parseMediaUrl(media);
 
     video.addEventListener('click', () => {
+        // console.log('КЛИК ИВЕНТ', evt.view.length);
+        
         let iframe = createIframe(id);
         iframe_tag.push(iframe);
         
-        if (iframe_tag.length > 1) {
+        if (iframe_tag.length > 1) {            
             for (let i = 0; i < iframe_tag.length-1; i++) {
                 iframe_tag[i].contentWindow.postMessage('{"event": "command", "func": "pauseVideo", "args": ""}', "*");
             }
