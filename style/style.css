@@ -46,7 +46,7 @@ body {
 
 .wave_bg__about {
     width: 100%;
-    height: 100vh;
+    height: 100%;
     padding: 120px 0;       
 }
 
@@ -85,6 +85,11 @@ body {
     width: 640px;
     transform: translate(-50%,-50%);
     cursor: zoom-out;
+}
+.about__text {
+    max-width: 1000px;
+    color: #fff;
+    padding: 0 25px;
 }
 @media(max-width: 1370px) {    
     .award__img {
@@ -194,7 +199,7 @@ body {
     margin: 0 45px;
 }
 .header__nav_logo {
-    width: 100px;
+    width: 100px;    
 }
 .header__nav_2 .header__nav_link:after {
     display: none;
@@ -319,6 +324,9 @@ body {
     margin-bottom: 30px;
     width: 120px;
 }
+.burger__menu li ul:first-child {
+    padding-left: 23px;
+}
 .burger__menu_show {
     display: block;;
 }
@@ -327,7 +335,7 @@ body {
 /*----------VIDEO CONTENT----------*/
 
 .video__content {
-    margin: 120px auto 0;
+    margin: 120px auto 80px;
     padding: 0 20px;
     display: grid;
     column-gap: 30px;
@@ -512,18 +520,28 @@ body {
     width: 100%;
     height: 100%;
     display: flex;
-    justify-content: center;        
+    flex-wrap: wrap;
+    justify-content: center;
+    user-select: text;         
 }
-.price__container {
+.price__container_ru {
     width: 1000px;
     max-width: 1000px; 
     color: #fff;
-    margin: 120px auto;
+    margin: 120px auto 60px;
     text-align: center;
 }
-.price__container > h2 {
+.price__container_en {
+    width: 1000px;
+    max-width: 1000px; 
+    color: #fff;
+    margin: 0 auto 120px;
+    text-align: center;    
+}
+.price__container_ru, .price__container_en  > h2 {
     letter-spacing: 2px;
     font-weight: 400;
+    text-transform: uppercase;
 }
 .price__br {
     width: 100%;    
@@ -552,7 +570,10 @@ body {
     }
     .price__offer {
         flex-basis: auto;
-        max-width: 400px;
+        max-width: 350px;
+    }
+    .price__about > ul{
+        padding: 15px;
     }  
 }
 .price__offer > h2 {
@@ -589,6 +610,7 @@ body {
     text-transform: uppercase;
     letter-spacing: 1px;  
     color: #fce38a;  
+    padding: 0 10px;
 }
 
 .price__about {
@@ -603,6 +625,7 @@ body {
 .price__about ul {    
     padding: 0 20px;
 }
+
 /*----------FOOTER----------*/
 .footer {
     width: 100%;
