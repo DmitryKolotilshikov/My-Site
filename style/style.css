@@ -433,8 +433,21 @@ body {
 .wave__feedback_bg {
     width: 100%;
     height: 100%;
-    padding: 120px 0;       
+    padding: 120px 0;
+    background-color: rgb(19, 19, 19);
+    
+    animation: render 5s ease-in-out infinite;
 }
+
+@keyframes render {
+    0% {
+        background-color: rgb(19, 19, 19);
+    }
+    50% {
+        background-color: rgb(49, 49, 49);
+    }
+}
+
 .feedback__container {
     width: 100%;
     max-width: 1200px;
