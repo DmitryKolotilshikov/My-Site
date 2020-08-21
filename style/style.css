@@ -47,8 +47,21 @@ body {
 .wave_bg__about {
     width: 100%;
     height: 100%;
-    padding: 120px 0;       
+    padding: 120px 0; 
+    background-color: rgb(13, 13, 13);
+    
+    animation: render 7s ease-in-out infinite;
 }
+
+@keyframes render {
+    0% {
+        background-color: rgb(13, 13, 13);
+    }
+    50% {
+        background-color: rgb(49, 49, 49);
+    }
+}      
+
 
 .about__container {
     width: 100%;
@@ -434,14 +447,14 @@ body {
     width: 100%;
     height: 100%;
     padding: 120px 0;
-    background-color: rgb(19, 19, 19);
+    background-color: rgb(13, 13, 13);
     
-    animation: render 5s ease-in-out infinite;
+    animation: render 7s ease-in-out infinite;
 }
 
 @keyframes render {
     0% {
-        background-color: rgb(19, 19, 19);
+        background-color: rgb(13, 13, 13);
     }
     50% {
         background-color: rgb(49, 49, 49);
@@ -550,6 +563,12 @@ body {
     color: #fff;
     margin: 0 auto 120px;
     text-align: center;    
+}
+.price__container_en > small {
+    text-transform: uppercase;
+}
+.price__container_en > h1 {
+    letter-spacing: 2px;
 }
 .price__container_ru, .price__container_en  > h2 {
     letter-spacing: 2px;
