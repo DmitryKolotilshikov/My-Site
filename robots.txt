@@ -1,11 +1,5 @@
 Host: https://www.kolotilshikov.com
 
 User-agent: *
-Disallow: /favicon/
-Disallow: /icons/
-Disallow: /img/
-Disallow: /js/
-Disallow: /pages/__.html
-Disallow: /style/
 
 Sitemap: https://www.kolotilshikov.com/sitemap.xml
